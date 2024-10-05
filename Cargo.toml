@@ -1,0 +1,19 @@
+[package]
+name = "sketch_io"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.75"
+axum = { version = "0.6.20", features = ["ws", "headers"] }
+futures = "0.3.28"
+geo = "0.26.0"
+serde = { version = "1.0.182", features = ["derive"] }
+serde_json = "1.0.104"
+tokio = { version = "1.29.1", features = ["macros", "rt-multi-thread"] }
+tower = { version = "0.4", features = ["util"] }
+tower-http = { version = "0.4.0", features = ["fs", "trace"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }

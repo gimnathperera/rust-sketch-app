@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sketch-IO 🎨🖌️</title>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <div id="main">
+      <div id="toolbox">
+	<div id="colors"></div>
+	<input type="color" id="selectedColor"
+	       class="button2x" value="#ffffff"></input>
+	<input type="button" id="clearButton"
+	       class="button2x" value="♻"></input>
+      </div>
+
+      <div>
+	<canvas id="canvas" width="1024" height="1024"></canvas>      
+	<span class="footer">Sketch IO 🎨🖌️</span>
+      </div>
+
+    </div>
+    
+    <div id="errorBox" class="invisible"></div>
+      
+    <script src="main.js"></script>
+
+  </body>
+</html>

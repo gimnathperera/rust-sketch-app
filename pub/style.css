@@ -1,0 +1,83 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #222;
+    color: #ddd;
+    font-family: monospace;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: 2em;
+}
+
+#canvas {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    aspect-ratio: 1/1;   
+}
+
+#canvas:hover {
+    cursor: crosshair;
+}
+
+#toolbox {
+    display: inline-block;
+    margin: 0 auto;
+    width: 128px;
+    padding: 1em;
+}
+
+.button2x {
+    width: 128px !important;
+    height: 128px !important;    
+}
+
+#toolbox > input {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    font-size: 64px;
+}
+
+#colors {
+}
+
+.color {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+}
+
+.footer {
+    display: block;
+    text-align: center;
+}
+
+#errorBox {
+    border: thick solid #990000;
+    background: #dd0000;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+    padding: 1em;
+    font-size: x-large;
+}
+
+.visible {
+    display: block;
+}
+.invisible {
+    display: none;
+}
